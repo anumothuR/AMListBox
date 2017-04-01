@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AMListBox_Example' do
+  pod 'AMListBox', :path => '../'
+
+  target 'AMListBox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
