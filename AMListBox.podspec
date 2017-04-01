@@ -47,7 +47,7 @@ AMListBox will help you to create ComboListBox in iOS.
   s.source_files = 'AMListBox/Classes/**/*'
   
    s.resource_bundles = {
-     'AMListBox' => ['AMListBox/Assets/*.png','AMListBox/**/*.xib']
+     'AMListBox' => ['AMListBox/**/*.xib']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
