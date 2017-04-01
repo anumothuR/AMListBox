@@ -1,0 +1,16 @@
+PODS:
+  - AMListBox (0.1.0)
+
+DEPENDENCIES:
+  - AMListBox (from `../`)
+
+EXTERNAL SOURCES:
+  AMListBox:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMListBox: e9fc8ba861c3d31b14e78e6eb21b77d86977e201
+
+PODFILE CHECKSUM: 6efd5ef00e278187af81e3deea62c699047a6546
+
+COCOAPODS: 1.1.1

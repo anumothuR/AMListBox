@@ -1,0 +1,28 @@
+{
+  "name": "AMListBox",
+  "version": "0.1.0",
+  "summary": "A short description of AMListBox.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/anumothuR/AMListBox",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "anumothuR": "anumothu911@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/anumothuR/AMListBox.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AMListBox/Classes/**/*",
+  "resource_bundles": {
+    "AMListBox": [
+      "AMListBox/Assets/*.png",
+      "AMListBox/**/*.xib"
+    ]
+  }
+}

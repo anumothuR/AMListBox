@@ -1,0 +1,6 @@
+framework module AMListBox {
+  umbrella header "AMListBox-umbrella.h"
+
+  export *
+  module * { export * }
+}

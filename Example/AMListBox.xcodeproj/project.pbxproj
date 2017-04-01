@@ -27,10 +27,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F9D6BF911E8FB57800830D98 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2082BA88D5D1E719BD342583 /* Pods-AMListBox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMListBox_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMListBox_Example/Pods-AMListBox_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3CDCAE4AD1C6642EDA76451E /* Pods-AMListBox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMListBox_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMListBox_Example/Pods-AMListBox_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4AE1378BF422AE61C0528795 /* AMListBox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AMListBox.podspec; path = ../AMListBox.podspec; sourceTree = "<group>"; };
+		4AE1378BF422AE61C0528795 /* AMListBox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMListBox.podspec; path = ../AMListBox.podspec; sourceTree = "<group>"; };
 		56C0B80A259557296E87470D /* Pods_AMListBox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMListBox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* AMListBox_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMListBox_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +58,8 @@
 		6E2A77F1DD493167BBE9B645 /* Pods-AMListBox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMListBox_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMListBox_Tests/Pods-AMListBox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CBCA584B73E75FDD346EC65 /* Pods-AMListBox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMListBox_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMListBox_Tests/Pods-AMListBox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C64FB8EB8C49D0983670EC3 /* Pods_AMListBox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMListBox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD353A5D5CE118CA8E5E9FD6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D219CEF84B70FD7F956B169A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AD353A5D5CE118CA8E5E9FD6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D219CEF84B70FD7F956B169A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +185,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				9EC35F8AB04480870A06B68A /* [CP] Embed Pods Frameworks */,
 				6CC5A289743824960940C50F /* [CP] Copy Pods Resources */,
+				F9D6BF911E8FB57800830D98 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -443,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -497,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMListBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,6 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMListBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

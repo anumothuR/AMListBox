@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchListViewController" customModule="AMListBox" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTitle" destination="Hh2-Ce-T4L" id="KqN-0p-KX8"/>
+                <outlet property="tableView" destination="jxW-Sk-btG" id="A0X-ok-8ky"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTitle" destination="hEr-5G-RPb" id="9tn-8b-jrm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEr-5G-RPb">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh2-Ce-T4L">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="gTF-08-hSp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-eP-NQJ">
+                            <frame key="frameInset" minX="10" minY="32" width="58" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="LPz-LD-A1d"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="738-2R-Xf4">
+                            <frame key="frameInset" minX="309" minY="32" width="58" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Done"/>
+                            <connections>
+                                <action selector="doneAction:" destination="-1" eventType="touchUpInside" id="Y5z-T9-i2v"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Hh2-Ce-T4L" secondAttribute="bottom" id="14b-3H-UFh"/>
+                        <constraint firstAttribute="height" constant="64" id="Gwx-Uu-H38"/>
+                        <constraint firstItem="Hh2-Ce-T4L" firstAttribute="leading" secondItem="hEr-5G-RPb" secondAttribute="leading" id="ZZE-ki-du1"/>
+                        <constraint firstAttribute="trailing" secondItem="Hh2-Ce-T4L" secondAttribute="trailing" id="eWX-kg-F0l"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jxW-Sk-btG">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="RK2-b2-E7u"/>
+                        <outlet property="delegate" destination="-1" id="tcP-Yu-0Z3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jxW-Sk-btG" firstAttribute="top" secondItem="hEr-5G-RPb" secondAttribute="bottom" id="9rl-dT-K2s"/>
+                <constraint firstItem="hEr-5G-RPb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F4I-Ql-06V"/>
+                <constraint firstItem="hEr-5G-RPb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PG3-2h-VuY"/>
+                <constraint firstAttribute="trailing" secondItem="jxW-Sk-btG" secondAttribute="trailing" id="Rdg-Qr-0y8"/>
+                <constraint firstAttribute="trailing" secondItem="hEr-5G-RPb" secondAttribute="trailing" id="YZT-yD-EvQ"/>
+                <constraint firstItem="jxW-Sk-btG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="deR-qK-QbM"/>
+                <constraint firstAttribute="bottom" secondItem="jxW-Sk-btG" secondAttribute="bottom" id="sgI-g3-pm1"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
